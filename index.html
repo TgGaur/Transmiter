@@ -1,0 +1,59 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<TITLE>Plane Control System</TITLE>
+<link rel="icon" href="icons8-joystick-96.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <script src="main.js"></script>
+
+    <div class="container">
+        <center>
+            <div class="header">
+                <h1 style="color: white; font-family: monospace; font-size: 25px; font-weight: lighter;"
+                    class="hover-underline-animation">Plane Control System</h1>
+
+            </div>
+            <div class="footer">
+                <div class="rudder" id="r3">
+                    <h1 class="hover-underline-animation"
+                        style="height: fit-content;width: fit-content; color: #bb44c3; font-family: monospace; font-size: 30px; font-weight: lighter; display:flex; align-items: center; justify-content: center;">
+                        Rudder</h1>
+                    <h1 class="hover-underline-animation" id="pit"
+                        style="color: #bb44c3; font-family: monospace; font-size: 35px; font-weight: lighter; margin-top: 80px;">
+                        Pitch: Center</h1>
+                    <h1 class="hover-underline-animation" id="key"
+                        style="color: #bb44c3; font-family: monospace; font-size: 35px; font-weight: lighter;">Key
+                        Pressed: None</h1>
+                </div>
+                <div class="rudder" id="r2">
+                    <h1 class="hover-underline-animation"
+                        style="height: fit-content;width: fit-content;  color: #bb44c3; font-family: monospace; font-size: 30px; font-weight: lighter; display:flex; align-items: center; justify-content: center;">
+                        Elevator</h1>
+                    <h1 class="hover-underline-animation" id="ele"
+                        style="color: #bb44c3; font-family: monospace; font-size: 35px; font-weight: lighter; margin-top: 80px;">
+                        Elevation: Center</h1>
+                    <h1 class="hover-underline-animation" id="key2"
+                        style="color: #bb44c3; font-family: monospace; font-size: 35px; font-weight: lighter;">Key
+                        Pressed: None</h1>
+                </div>
+                <div class="rudder" id="r1" style="display:flex; justify-content: center; align-items: center;">
+                    <h1 class="hover-underline-animation" id="spe"
+                        style="color: #bb44c3; font-family: monospace; font-size: 40px; font-weight: lighter;">
+                        Motor Speed: 0</h1>
+                    <button onclick="stop()" id="button"
+                        style="color: rgb(255, 255, 255);  border-radius: 100px; height: 40px; font-size: 20px; background-color: red; border-color: transparent; position: absolute; margin-top: 200px;">STOP
+                        MOTOR</button>
+                </div>
+
+            </div>
+
+        </center>
+    </div>
+</body>
